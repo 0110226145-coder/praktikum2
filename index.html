@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <h3 align="center">A Web Page</h3>
+    <hr>
+
+    <table width="100%" border="1">
+        <tr align="center">
+            <td><a href="#">Home</a></td>
+            <td><a href="#">Generate Link</a></td>
+            <td><a href="#">Transaction History</a></td>
+            <td><a href="#">Policy</a></td>
+            <td><a href="#">Logout</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <form action="hasil.html" method="get">
+
+        <table cellpadding="8">
+
+            <tr>
+                <td rowspan="5" valign="top">
+                    <img src="src/foto1.jpeg"
+                         alt="Foto Barang"
+                         width="150"
+                         height="150">
+                    <br><br>
+
+                    <label for="foto">Upload Picture:</label>
+                    <input type="file" id="foto" name="foto">
+                </td>
+
+                <td>Title Here :</td>
+                <td>
+                    <input type="text" name="title"
+                           value="MacBook Air E987" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Description :</td>
+                <td>
+                    <textarea name="description"
+                              rows="4"
+                              cols="30">Year : 2030
+Model :
+Condition : Mint</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Account Number :</td>
+                <td>
+                    <input type="text" name="account"
+                           value="113-666-999-0" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Bank :</td>
+                <td>
+                    <select name="bank">
+                        <option value="HSBC">HSBC</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BNI">BNI</option>
+                        <option value="Mandiri">Mandiri</option>
+                        <option value="BRI">BRI</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Account Holder :</td>
+                <td>
+                    <input type="text" name="holder"
+                           value="Name Here" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Transaction :</td>
+                <td>
+                    <select name="transaction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+
+                    <br>
+                    <small>
+                        * If the transaction is for 3 persons,
+                        choose 3 from the drop-down list.
+                    </small>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <input type="checkbox"
+                           name="mobile"
+                           value="yes"
+                           checked>
+                    Send To Mobile Phone
+                    <br>
+
+                    <input type="checkbox"
+                           name="emailcopy"
+                           value="yes"
+                           checked>
+                    Send to Email
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Send to Mobile Phone :</td>
+                <td>
+                    <input type="tel" name="phone"
+                           value="1234567890">
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>Send to Email :</td>
+                <td>
+                    <input type="email" name="email"
+                           value="lilaaulia030@gmail.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3" align="center">
+                    <br>
+                    <button type="submit">Generate Nabr Link</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
